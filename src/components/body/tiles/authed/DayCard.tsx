@@ -4,9 +4,9 @@ import advancedFormat from "dayjs/plugin/advancedFormat"
 import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import { FaPaw } from "react-icons/fa"
-import { firebaseApp } from "../../../../firestore.config"
-import { Auth } from "../../../containers/Auth"
-import { Date } from "../../../containers/Date"
+import { firebaseApp } from "../../../../../firestore.config"
+import { Auth } from "../../../../containers/Auth"
+import { Date } from "../../../../containers/Date"
 
 dayjs.extend(advancedFormat)
 
@@ -79,7 +79,7 @@ export const DayCard: React.FC<Props> = ({ day, isSelected, tileLength }) => {
   return (
     <div className="relative flex w-full items-center justify-between gap-2">
       {isToday && (
-        <div className="absolute -z-50 h-[20em] w-[20em] -translate-x-36 -translate-y-28 rounded-full bg-yellow-600 opacity-40 blur-2xl" />
+        <div className="absolute -z-10 h-[20em] w-[20em] -translate-x-36 -translate-y-28 rounded-full bg-yellow-600 opacity-40 blur-2xl" />
       )}
       <div className="absolute -top-5 -left-5 rotate-90 text-sm text-yellow-500">
         {isToday && <FaPaw className="rotate-45" />}

@@ -4,6 +4,7 @@ export const useTileNavigation = () => {
   const tileLength = 10000
   const [selectedTileIndex, setSelectedTileIndex] = useState(tileLength / 2)
   const [startY, setStartY] = useState<number>(0)
+
   const resetToToday = () => {
     setSelectedTileIndex(tileLength / 2)
   }

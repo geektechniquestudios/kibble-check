@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { Calendar } from "./Calendar"
-import { Auth } from "../../../containers/Auth"
-import { Date } from "../../../containers/Date"
+import { Auth } from "../../../../containers/Auth"
+import { Date } from "../../../../containers/Date"
 
 export const AuthedTilesGroup: React.FC = () => {
   const { user, isLoading } = Auth.useContainer()
